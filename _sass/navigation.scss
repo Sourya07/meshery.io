@@ -5,10 +5,9 @@ nav {
 	font-size: .8rem;
 	width: fit-content;
 	padding-left: 0rem;
-	margin-left: .25rem;
 	margin-left: auto;
 	position: relative;
-	z-index: 1000;
+	z-index: $z-index-nav;
 
 	@media #{$mid-point} {
 		padding-right: 1rem;
