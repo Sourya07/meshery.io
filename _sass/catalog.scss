@@ -1,13 +1,11 @@
 @use "./variables.scss" as *;
-
 .catalog-heading {
   text-align: center;
-  font-weight: 700;
+  font-weight:700;
   margin: 2.5rem 0 1rem 0;
   word-spacing: 5px;
   font-size: 2.5rem;
 }
-
 .catalog-subheading {
   text-align: center;
   color: var(--color-secondary-dark);
@@ -15,18 +13,15 @@
   margin: 1rem auto;
   font-size: 2rem;
 }
-
 .catalog-subtext {
   text-align: center;
   color: var(--color-secondary-dark);
   font-size: 18px;
   font-weight: 400;
 }
-
 .tabcontent h3 {
   color: var(--color-secondary-dark);
 }
-
 /* CARD-STYLES */
 .card {
   position: relative;
@@ -86,7 +81,6 @@
   //   // background: rgba(182, 215, 168, 0.4);
   // }
 }
-
 .pattern-image-overlay {
   opacity: 0.2;
   width: 60%;
@@ -98,7 +92,6 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
 .card-overlay {
   position: relative;
   width: 220px;
@@ -110,7 +103,6 @@
   box-shadow: 2px 2px 6px 0px #00d3a9;
   margin-bottom: 20px;
 }
-
 .overlay-text {
   position: absolute;
   top: 40%;
@@ -121,7 +113,6 @@
   z-index: 2;
   white-space: wrap;
 }
-
 .pattern-id-overlay {
   position: absolute;
   bottom: 0.5rem;
@@ -130,7 +121,6 @@
   margin-right: 14px;
   opacity: 0.7;
 }
-
 .catalog {
   padding-top: 1rem;
   padding-bottom: 2rem;
@@ -146,13 +136,10 @@
     height: fit-content;
     padding-top: 1rem;
   }
-
-  #sort,
-  #search {
+  #sort, #search {
     background-color: transparent;
     color: var(--color-primary-qtext);
   }
-
   #sort:focus {
     background-color: var(--color-primary-light);
   }
@@ -171,24 +158,20 @@ p {
   -webkit-font-smoothing: antialiased;
   font-size: 1.1rem;
 }
-
 .inner-span {
   font-size: 16px;
   position: relative;
   color: black;
 }
-
 .column {
   display: none;
 }
-
 .column:has(.card) {
   // float: left;
   // padding: 0 10px;
   display: block;
   // margin: 0 1rem;
 }
-
 .smp-overlay {
   width: 16px;
   bottom: 0;
@@ -197,7 +180,6 @@ p {
   vertical-align: middle;
   padding-right: 1px;
 }
-
 .smp {
   width: 16px;
   bottom: 0;
@@ -214,7 +196,6 @@ p {
   padding: 10px;
   cursor: pointer;
 }
-
 .import-disabled {
   background-color: #aaa;
   color: white;
@@ -222,16 +203,14 @@ p {
   border: none;
   padding: 10px;
 }
-
 .import-secondary {
   background-color: inherit;
-  border: 1px solid #00b39f;
+  border:1px solid #00b39f;
   color: var(--color-primary-qtext);
   border-radius: 4px;
   cursor: pointer;
   padding: 10px;
 }
-
 .btn-tooltip-grp {
   display: flex;
   flex-direction: row;
@@ -242,7 +221,6 @@ p {
   // -ms-transform: translateY(-60%);
   // transform: translateY(25%) translateX(0%);
 }
-
 /* Clear floats after the columns */
 
 .disabled-label {
@@ -266,7 +244,6 @@ p {
   padding-right: 12px;
   color: var(--color-primary-light-tbase);
 }
-
 .chip {
   display: inline-flex;
   flex-direction: row-reverse;
@@ -291,40 +268,34 @@ p {
   justify-content: center;
   float: left;
 }
-
-.chip.COLLABORATION {
-  background-color: var(--integrations-bg);
-  box-shadow: 0px 1px 2px var(--integrations-bg);
-
-  .pattern-type {
-    box-shadow: none;
-    background-color: none;
-    color: var(--color-secondary-medium);
+  .chip.COLLABORATION {
+    background-color: var(--integrations-bg);
+    box-shadow: 0px 1px 2px var(--integrations-bg);
+    .pattern-type {
+      box-shadow: none;
+      background-color: none;
+      color: var(--color-secondary-medium);
+    }
   }
-}
-
-.chip.LIFECYCLE {
-  background-color: var(--brand-color-tertiary);
-  box-shadow: 0px 1px 2px var(--brand-color-tertiary);
-
-  .pattern-type {
-    box-shadow: none;
-    background-color: none;
-    color: var(--color-secondary-medium);
+  .chip.LIFECYCLE {
+    background-color: var(--brand-color-tertiary);
+    box-shadow: 0px 1px 2px var(--brand-color-tertiary);
+    .pattern-type {
+      box-shadow: none;
+      background-color: none;
+      color: var(--color-secondary-medium);
+    }
   }
-}
-
-.chip.GITOPS {
-  background-color: var(--action-color-dark);
-  box-shadow: 0px 1px 2px var(--action-color-dark);
-  color: var(--color-primary-dark);
-}
-
-.chip.CONFIGURATION {
-  background-color: var(--color-grey-light);
-  box-shadow: 0px 1px 2px var(--action-color-light);
-  color: var(--color-primary-dark);
-}
+  .chip.GITOPS {
+    background-color: var(--action-color-dark);
+    box-shadow: 0px 1px 2px var(--action-color-dark);
+    color: var(--color-primary-dark);
+  }
+  .chip.CONFIGURATION {
+    background-color: var(--color-grey-light);
+    box-shadow: 0px 1px 2px var(--action-color-light);
+    color: var(--color-primary-dark);
+  }
 
 .category-label {
   display: inline;
@@ -371,21 +342,17 @@ p {
   color: var(--color-secondary-light);
   // margin: 0 3px 3px 0;
 }
-
 .pattern-image-container {
   display: flex;
   justify-content: center;
 }
-
-.pattern-image,
-.model-image {
+.pattern-image, .model-image {
   aspect-ratio: 1;
   width: 60%;
   margin-top: 24px;
   object-fit: contain;
   position: absolute;
 }
-
 .patterns-coming-soon {
   max-width: 70%;
   position: relative;
@@ -399,7 +366,6 @@ p {
   -ms-transform: translateY(0%) translateX(-0%) rotate(10deg);
   -o-transform: translateY(0%) translateX(-0%) rotate(10deg);
 }
-
 .extensions-coming-soon {
   width: 50%;
   height: 50%;
@@ -413,7 +379,7 @@ p {
   -moz-transform: translateY(0%) translateX(-0%) rotate(-10deg);
   -ms-transform: translateY(0%) translateX(-0%) rotate(-10deg);
   -o-transform: translateY(0%) translateX(-0%) rotate(-10deg);
-
+  
 }
 
 .hidden {
@@ -423,23 +389,19 @@ p {
 .external-link {
   display: inline-block;
   width: 1rem;
-
   img {
     margin-bottom: 3px;
-
     &:hover {
       opacity: 0.7;
     }
   }
 }
-
 .internal-link {
   height: 1.25rem;
   margin-left: 0.5rem;
   margin-bottom: 4px;
   vertical-align: middle;
   filter: var(--image-filter-light);
-
   &:hover {
     opacity: 0.7;
   }
@@ -454,14 +416,11 @@ p {
   border-radius: 15px;
   // margin-top: 5rem;
   // backgroud:var(--background-grey);
-  height: fit-content;
-
-  /* height needs to be increased with regarding to the total no. of patterns */
+  height: fit-content; /* height needs to be increased with regarding to the total no. of patterns */
   .load-more {
     display: none;
   }
 }
-
 label {
   display: block;
   padding-left: 15px;
@@ -478,7 +437,6 @@ input {
   top: -1px;
   display: inline;
 }
-
 input[type="checkbox"] {
   margin: 0;
 }
@@ -496,13 +454,11 @@ input[type="checkbox"] {
   pointer-events: none;
   transition: all 0.3s;
 }
-
 .modal-section {
   display: flex;
   flex-direction: column;
   gap: 0.625rem;
 }
-
 .modal-image {
   display: flex;
   flex-direction: column;
@@ -512,7 +468,6 @@ input[type="checkbox"] {
   padding: 2rem;
   min-height: fit-content;
   background: (var(--color-primary-light-dark));
-
   img {
     max-width: 80%;
     // margin-top: 25px;
@@ -532,7 +487,6 @@ input[type="checkbox"] {
 .modal-content {
   display: flex;
   flex-direction: row;
-
   code {
     padding: 1rem;
     border-radius: 0.5rem;
@@ -544,18 +498,15 @@ input[type="checkbox"] {
     display: block;
     // & p ul {
     text-align: left;
-
     // }
     a {
       color: white;
     }
   }
-
   p {
     color: var(--color-secondary-dark);
   }
 }
-
 .modal-h2 {
   color: var(--color-secondary-dark);
   font-size: 1.5rem;
@@ -583,7 +534,7 @@ input[type="checkbox"] {
   gap: 1rem;
 }
 
-.modal-window>div {
+.modal-window > div {
   position: absolute;
   display: flex;
   flex-direction: row;
@@ -595,24 +546,23 @@ input[type="checkbox"] {
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 15px;
-  background: linear-gradient(45deg,
-      var(--color-primary-dark),
-      var(--color-primary-light));
+  background: linear-gradient(
+    45deg,
+    var(--color-primary-dark),
+    var(--color-primary-light)
+  );
   // padding: 1.5rem 2.5rem 1.5rem 3rem;
 
   .modal-info {
     overflow-y: auto;
   }
 }
-
-.modal-window>div::-webkit-scrollbar {
+.modal-window > div::-webkit-scrollbar {
   display: none;
 }
-
 .modal-info::-webkit-scrollbar {
   display: none;
 }
-
 .catalog-info {
   text-align: center;
 }
@@ -631,7 +581,6 @@ input[type="checkbox"] {
   height: 50px;
   width: 50px;
 }
-
 .modal-close {
   display: flex;
   justify-content: space-between;
@@ -641,13 +590,11 @@ input[type="checkbox"] {
   display: flex;
   text-align: center;
   text-decoration: none;
-
   img {
     width: 1rem;
     vertical-align: middle;
   }
 }
-
 .modal-pattern-name {
   color: var(--color-secondary-dark);
   text-align: center;
@@ -658,7 +605,6 @@ input[type="checkbox"] {
   text-overflow: ellipsis;
   overflow: hidden;
 }
-
 .modal-chip {
   display: inline-flex;
   flex-direction: row-reverse;
@@ -681,7 +627,6 @@ input[type="checkbox"] {
   top: 0px;
   right: 0px;
 }
-
 .modal-card {
   overflow: hidden;
   position: relative;
@@ -694,7 +639,6 @@ input[type="checkbox"] {
   transition: 0.4s ease-out;
   box-shadow: 2px 2px 6px 0px #00d3a9;
 }
-
 .modal-smp {
   width: 20px;
   bottom: 0;
@@ -702,14 +646,12 @@ input[type="checkbox"] {
   vertical-align: middle;
   padding-right: 2px;
 }
-
 .modal-pattern-image {
   width: 60%;
   object-fit: contain;
   position: absolute;
   margin-top: 16px;
 }
-
 .modal-pattern-id {
   color: var(--color-secondary-dark);
   position: absolute;
@@ -723,11 +665,9 @@ input[type="checkbox"] {
   padding: 20px 40px 40px;
   max-width: 600px;
 }
-
 .modal-text {
   display: inline;
 }
-
 .image-container {
   flex-basis: 70%;
 }
@@ -760,7 +700,6 @@ input[type="checkbox"] {
   padding: 0px;
   cursor: pointer;
 }
-
 .close:hover {
   color: #00d3a9 !important;
   opacity: 0.8 !important;
@@ -771,14 +710,12 @@ open-modal-btn {
   display: block;
   margin: 0 auto;
 }
-
 .btn-grp {
   margin-top: 1rem;
   display: flex;
   gap: 1.5rem;
   font-size: 1rem;
 }
-
 .tooltip-modal:hover {
   text-decoration: none;
 }
@@ -786,7 +723,6 @@ open-modal-btn {
 .catalog-details li span {
   font-size: 0.25rem;
 }
-
 .catalog-item-detail {
   color: var(--color-secondary-dark);
 }
@@ -807,7 +743,6 @@ open-modal-btn {
   padding-right: 2px;
   padding-bottom: 3px;
 }
-
 label {
   white-space: nowrap;
   color: var(--color-secondary-dark);
@@ -826,7 +761,6 @@ label {
   vertical-align: middle;
   padding-right: 2px;
 }
-
 // .modal-pattern-id {.
 //   position: absolute;
 //   bottom: 0;
@@ -842,11 +776,9 @@ label {
   padding: 20px 40px 40px;
   max-width: 600px;
 }
-
 .modal-text {
   display: inline;
 }
-
 .image-container {
   flex-basis: 70%;
 }
@@ -866,7 +798,6 @@ label {
   margin-left: 5%;
   border-radius: 15px;
 }
-
 .modal-card-overlay {
   position: relative;
   width: 150px;
@@ -878,7 +809,6 @@ label {
   box-shadow: $catalog_box_shadow_color;
   margin-bottom: 20px;
 }
-
 .modal-smp-overlay {
   width: 20px;
   bottom: 0;
@@ -887,7 +817,6 @@ label {
   vertical-align: middle;
   padding-right: 2px;
 }
-
 .modal-pattern-id-overlay {
   position: absolute;
   bottom: 0.5rem;
@@ -898,7 +827,6 @@ label {
   color: white;
   opacity: 0.7;
 }
-
 .modal-overlay-text {
   position: absolute;
   top: 40%;
@@ -921,15 +849,12 @@ label {
     margin-top: 3rem;
   }
 }
-
 .catalog-load-more {
   display: none;
 }
-
 .dropbtn {
   display: none;
 }
-
 .contentdata {
   margin: 0;
   padding: 0;
@@ -950,22 +875,16 @@ label {
 }
 
 .visible-content {
-  display: inline;
-  /* Initially show the visible content */
+  display: inline; /* Initially show the visible content */
 }
 
 .hidden-content {
-  display: none;
-  /* Initially hide the hidden content */
-  max-height: none;
-  /* Remove the max-height limit to allow it to expand */
-  opacity: 1;
-  /* Set opacity to fully visible */
-  overflow: visible;
-  /* Allow the content to be fully visible */
+  display: none; /* Initially hide the hidden content */
+  max-height: none; /* Remove the max-height limit to allow it to expand */
+  opacity: 1; /* Set opacity to fully visible */
+  overflow: visible; /* Allow the content to be fully visible */
   transition: max-height 0.5s, opacity 0.5s;
 }
-
 .hide-by-default {
   display: none;
 }
@@ -976,41 +895,35 @@ label {
     height: 100%;
     align-items: center;
   }
-
   .btn-tooltip-grp {
     justify-content: center;
   }
 }
 
 @media screen and (max-width: 1150px) {
-
   // .modal-info {
   //   overflow-y: auto;
   // }
-  .modal-window>div {
+  .modal-window > div {
     height: 80%;
     overflow-y: initial;
     flex-direction: column;
     left: 50%;
     padding: 0 28px;
     text-align: center;
-
     .modal-info {
       padding-top: 0;
       overflow-y: initial;
     }
   }
-
   .modal-content {
     display: flex;
     flex-direction: column;
     align-items: center;
-
     code {
       margin: auto auto;
     }
   }
-
   .modal-smp {
     width: 20px;
     bottom: 0;
@@ -1018,7 +931,6 @@ label {
     vertical-align: middle;
     padding-right: 2px;
   }
-
   // .modal-pattern-id {
   //   position: absolute;
   //   bottom: 0;
@@ -1031,11 +943,9 @@ label {
     padding: 20px 40px 40px;
     max-width: 600px;
   }
-
   .modal-text {
     display: inline;
   }
-
   .image-container {
     flex-basis: 70%;
   }
@@ -1049,7 +959,6 @@ label {
     margin-left: 5%;
     border-radius: 15px;
   }
-
   .modal-card-overlay {
     position: relative;
     width: 150px;
@@ -1061,7 +970,6 @@ label {
     box-shadow: 2px 2px 6px 0px #00d3a9;
     margin-bottom: 20px;
   }
-
   .modal-smp-overlay {
     width: 20px;
     bottom: 0;
@@ -1071,7 +979,6 @@ label {
     padding-right: 2px;
     padding-bottom: 3px;
   }
-
   .modal-pattern-id-overlay {
     position: absolute;
     bottom: 0;
@@ -1081,7 +988,6 @@ label {
     color: white;
     opacity: 0.7;
   }
-
   .modal-overlay-text {
     position: absolute;
     top: 40%;
@@ -1093,7 +999,6 @@ label {
     z-index: 2;
     white-space: nowrap;
   }
-
   .close {
     display: flex;
     justify-content: space-between;
@@ -1106,7 +1011,6 @@ label {
     padding: 0px;
     cursor: pointer;
   }
-
   .catalog-info {
     text-align: center;
   }
@@ -1122,7 +1026,6 @@ label {
 
   .tooltip-modal {
     position: relative;
-
     & .tooltiptext-modal {
       position: absolute;
       top: 50%;
@@ -1131,11 +1034,9 @@ label {
       transition: all 0.5s;
     }
   }
-
   .related-patterns-img {
     display: none;
   }
-
   .hide-by-default {
     display: flex;
   }
@@ -1144,7 +1045,6 @@ label {
     width: 100%;
     // padding: 4px 32px;
   }
-
   .modal-image {
     padding-bottom: 0;
     padding-top: 2.5rem;
@@ -1160,7 +1060,6 @@ label {
       max-width: 30%;
     }
   }
-
   .modal-info {
     text-align: left;
   }
@@ -1171,13 +1070,11 @@ label {
     margin-top: 0;
   }
 }
-
 .viewall {
   display: flex;
   padding: 5px;
   margin: 5px;
 }
-
 .viewallbtn {
   cursor: pointer;
   border: none;
@@ -1189,9 +1086,8 @@ label {
   padding: 0.5rem;
   background: #00b39f;
 }
-
-.viewallbtn:hover {
-  color: #fff;
+.viewallbtn:hover{
+  color:#fff;
 }
 
 @media screen and (max-width: 650px) {
@@ -1199,39 +1095,32 @@ label {
     width: 100%;
     height: 100%;
   }
-
-  .modal-window>div {
+  .modal-window > div {
     overflow-y: initial;
-
     .modal-info {
       padding-top: 0;
       overflow-y: initial;
     }
   }
 }
-
 @media screen and (min-width: 770px) {
   .viewallbtn {
     position: relative;
   }
 }
-
 @media screen and (max-width: 770px) {
   .catalog-load-more {
     display: unset;
   }
-
   .dropbtn {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 0.5rem;
   }
-
   .viewall {
     justify-content: center;
   }
-
   .catalog {
     .row {
       display: flex;
@@ -1248,7 +1137,6 @@ label {
     .column-lg:has(.card) {
       display: block;
     }
-
     .mobile_column_sm {
       display: unset;
     }
@@ -1262,38 +1150,30 @@ label {
     gap: 1rem;
     // padding-bottom: 3rem;
     margin-bottom: .15rem;
-
     .dropdown {
       align-self: center;
       margin-bottom: 7rem;
     }
-
     .category-div {
       padding-left: 15px;
     }
-
     .compatibility-div {
       margin-bottom: 3rem;
       margin-top: -1rem;
     }
-
     .category-div,
     .compatibility-div,
     .tech-div {
       display: grid;
-
       label {
         margin: 0;
       }
-
       column-gap: 2rem;
-
       .open-service-mesh {
         grid-row: 4/5;
         grid-column: 1/3;
       }
     }
-
     .category-para,
     .category-div,
     .compatibility-div,
@@ -1302,16 +1182,13 @@ label {
     .tech-para {
       display: none;
     }
-
     .load-more {
       display: block;
       align-self: center;
     }
   }
 }
-
 @media screen and (max-width: 770px) and (min-width: 450px) {
-
   .category-div,
   .compatibility-div,
   .tech-div {
@@ -1319,9 +1196,7 @@ label {
     grid-template-columns: 1fr 1fr;
   }
 }
-
 @media screen and (max-width: 450px) {
-
   .category-div,
   .compatibility-div,
   .tech-div {
@@ -1339,12 +1214,10 @@ label {
       max-width: 40%;
     }
   }
-
   .modal-h1,
   .related-patterns {
     display: none;
   }
-
   .btn-grp {
     // flex-direction: column;
     align-items: center;
